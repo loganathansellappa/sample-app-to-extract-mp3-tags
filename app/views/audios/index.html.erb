@@ -1,0 +1,32 @@
+<%= form_tag audios_path, :method => 'get' , html: {class: "searchform"} do  %>
+    <%= text_field_tag :search, params[:search],class: "searchfield" %>
+    <%= submit_tag "Search",class: "searchbutton" %>
+<% end %>
+
+<form class="searchform">
+	<input type="text" onblur="if (this.value == '') {this.value = 'Search...';}" onfocus="if (this.value == 'Search...') {this.value = '';}" value="Search..." class="searchfield">
+	<input type="button" value="Go" class="searchbutton">
+</form>
+
+<% if @audios.any? %>
+  <div class="CSSTableGenerator" >
+    <table >
+      <tr>
+        <td>Album</td>
+        <td>Artist</td>
+        <td >Title</td>
+        <td>Track No</td>
+      </tr>
+      <%@audios.each do |audio|%>			
+        <tr>
+          <td><%= audio.album%></td>
+          <td><%= audio.artist%></td>
+          <td><%= audio.title%></td>
+          <td><%= audio.track%></td>
+        </tr>
+      <%end%>
+    </table>
+  </div>
+<%else%>
+  Oops! Audio list is empty
+<%end%>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  artist: MyString
+  title: MyString
+  track: MyString
+  album: MyString
+  tracknum: MyString
+  audio_file_size: MyString
+  audio_file_name: MyString
+  audio_file_content_type: MyString
+  audio_file_updated_at: MyString
+
+two:
+  artist: MyString
+  title: MyString
+  track: MyString
+  album: MyString
+  tracknum: MyString
+  audio_file_size: MyString
+  audio_file_name: MyString
+  audio_file_content_type: MyString
+  audio_file_updated_at: MyString
