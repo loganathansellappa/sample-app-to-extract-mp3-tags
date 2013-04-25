@@ -1,4 +1,17 @@
-<%= form_for @audio, :html => { :multipart => true } do |form| %>
+<%= link_to "Back to Audios", audios_path,class: "link" %>
+
+<div style="margin: -20px 100px;;">
+  <%= form_for @audio, html: {multipart: true} do |form| %>
+<% if @audio.errors.any? %>
+    <div class="error">
+      <ul>
+        <% @audio.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
   <%= form.file_field :audio %>
   <%= form.submit%>
  <% end %>
+</div>

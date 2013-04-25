@@ -1,5 +1,7 @@
-<%= form_tag audios_path, :method => 'get' , html: {class: "searchform"} do  %>
-    <%= text_field_tag :search, params[:search],class: "searchfield" %>
+<%= link_to "Audios", audios_path,class: "link" %>
+<%= link_to "Add Mp3", new_audio_path,class: "link" %>
+<%= form_tag audios_path, :method => 'get' ,class: "searchform" do  %>
+   <%= text_field_tag :search, params[:search],class: "searchfield",placeholder: "Search by Album, Artist, Title" %>
     <%= submit_tag "Search",class: "searchbutton" %>
 <% end %>
 
@@ -23,5 +25,7 @@
     </table>
   </div>
 <%else%>
-  Oops! Audio list is empty
+<div class="empty-list">
+  <span>Oops! Audio list is empty</span>
+</div>
 <%end%>

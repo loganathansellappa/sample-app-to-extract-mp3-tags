@@ -99,6 +99,7 @@
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
     display: inline-block;
     padding: 3px 5px;
+    margin: 10px auto 10px 310px;
 }
 
 .searchform .searchfield {
@@ -124,5 +125,26 @@
     font-size: 11px;
     height: 27px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-    width: 27px;
+    width: auto;
+    cursor: pointer
+}
+
+.link {
+    padding: 7px;
+    vertical-align: middle;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(center top , #9E9E9E, #454545) repeat scroll 0 0 transparent;
+    border-color: #000000;
+    border-image: none;
+    border-style: solid;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    border-width: 0 0 1px;
+    border-radius: 2em 2em 2em 2em;
+    text-decoration: none;
 }

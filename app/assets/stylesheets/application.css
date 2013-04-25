@@ -11,3 +11,29 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+    background: none repeat scroll 0 0 #F9F9F9;
+    font-family: "Libre Baskerville",serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+.error,.empty-list {
+    background: none repeat scroll 0 0 #FBE3E4;
+    border-color: #FBC2C4;
+    color: #8A1F11;
+}
+
+.error, .notice,.empty-list{
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 10px;
+}
+
+.notice {
+    background: none repeat scroll 0 0 #FFF6BF;
+    border-color: #FFD324;
+    color: #514721;
+}

@@ -10,7 +10,7 @@ class AudiosController < ApplicationController
   def create
    @audio =  Audio.new(params[:audio])  
    if @audio.save
-    redirect_to audios_path
+    redirect_to audios_path,notice: "File uploaded successfully"
    else
      render "new"
    end
